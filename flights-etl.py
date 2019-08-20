@@ -33,7 +33,7 @@ spark = SQLContext(sc)
 from datetime import date 
 
 
-file_name = str("2019-04-30")
+file_name = str(date.today())
 
 bucket_name = "gs://flight_data_json"
 # In[9]:
