@@ -85,7 +85,7 @@ with DAG("flights_delay_etl",default_args=DEFAULT_DAG_ARGS) as dag :
         
         task_id ="delete_dataproc_cluster",
         cluster_name="ephemeral-spark-cluster-{{ds_nodash}}",
-        region="asia-east1",
+        region="us-west1",
         trigger_rule = TriggerRule.ALL_DONE
     )
 
